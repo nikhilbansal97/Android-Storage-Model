@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AndroidStorageModel">
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="AndroidStorageModel.Label" parent="AndroidStorageModel">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AndroidStorageModel.Item" parent="AndroidStorageModel">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

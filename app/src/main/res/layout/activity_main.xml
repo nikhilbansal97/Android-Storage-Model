@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/permissions"
+            style="@style/AndroidStorageModel.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_permissions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/request_read_permission"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_read_permission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/permissions" />
+
+        <TextView
+            android:id="@+id/request_write_permission"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_write_permission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/request_read_permission" />
+
+        <TextView
+            android:id="@+id/internal"
+            style="@style/AndroidStorageModel.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_internal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/request_write_permission" />
+
+        <TextView
+            android:id="@+id/test_read_internal_app_specific"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_read_internal_app_specific_files"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/internal" />
+
+        <TextView
+            android:id="@+id/test_write_internal_app_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_write_internal_app_specific_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_read_internal_app_specific" />
+
+        <TextView
+            android:id="@+id/test_read_internal_app_specific_cache"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_read_internal_app_specific_cache"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_internal_app_folder" />
+
+        <TextView
+            android:id="@+id/test_read_internal_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_read_internal_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_read_internal_app_specific_cache" />
+
+        <TextView
+            android:id="@+id/test_write_internal_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_write_internal_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_read_internal_folder" />
+
+        <TextView
+            android:id="@+id/print_environment_details"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/print_environment_storage_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_internal_folder" />
+
+        <TextView
+            android:id="@+id/external"
+            style="@style/AndroidStorageModel.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_external"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/print_environment_details" />
+
+        <TextView
+            android:id="@+id/test_read_external_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_read_external_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/external" />
+
+        <TextView
+            android:id="@+id/test_write_external_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_write_external_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_read_external_folder" />
+
+        <TextView
+            android:id="@+id/test_write_image_folder_file_api"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_write_image_into_external_pictures_collection_using_file_apis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_external_folder" />
+
+        <TextView
+            android:id="@+id/test_write_external_file_local"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/try_write_image_from_local"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_image_folder_file_api" />
+
+        <TextView
+            android:id="@+id/test_read_external_app_specific_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_read_external_app_specific_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_external_file_local" />
+
+        <TextView
+            android:id="@+id/test_write_external_app_specific_folder"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_write_external_app_specific_folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_read_external_app_specific_folder" />
+
+        <TextView
+            android:id="@+id/pick_image"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_write_external_app_specific_folder" />
+
+        <TextView
+            android:id="@+id/pick_document"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_document"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pick_image" />
+
+        <TextView
+            android:id="@+id/query_images"
+            style="@style/AndroidStorageModel.Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/query_images_using_mediastore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pick_document" />
+
+        <TextView
+            android:id="@+id/read_permission_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_permission"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/write_permission_status"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/write_permission_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write_permission_status"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/read_permission_status" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

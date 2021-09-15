@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Android Storage Model</string>
+    <string name="test_read_internal_app_specific_files">Test Read internal app specific files dir</string>
+    <string name="test_read_internal_app_specific_cache">Test Read internal app specific cache dir</string>
+    <string name="test_read_internal_folder">Test read internal root folder</string>
+    <string name="test_write_internal_folder">Test write internal root folder</string>
+    <string name="print_environment_storage_details">Print Environment storage details</string>
+    <string name="request_read_permission">Request Read External Storage Permission</string>
+    <string name="request_write_permission">Request Write External Storage Permission</string>
+    <string name="test_read_external_folder">Test Read External folder.</string>
+    <string name="test_write_external_folder">Test Write External folder using File APIs</string>
+    <string name="test_read_internal_app_specific_folder">Test read internal app specific folder.</string>
+    <string name="test_write_internal_app_specific_folder">Test write internal app specific folder</string>
+    <string name="label_permissions">Permissions</string>
+    <string name="label_internal">Internal</string>
+    <string name="label_external">External</string>
+    <string name="test_read_external_app_specific_folder">Test Read External app specific folder.</string>
+    <string name="test_write_external_app_specific_folder">Test Write External app specific folder</string>
+    <string name="read_permission">Read Permission Status</string>
+    <string name="write_permission_status">Write Permission Status</string>
+    <string name="test_delete_external_folder">Test Delete External Folder</string>
+    <string name="try_write_image_from_local">Try Write Image using MediaStore APIs</string>
+    <string name="test_write_image_into_external_pictures_collection_using_file_apis">Test Write Image into External Pictures collection using File APIs</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="pick_document">Pick Document</string>
+    <string name="query_images_using_mediastore">Query Images using MediaStore</string>
+</resources>
